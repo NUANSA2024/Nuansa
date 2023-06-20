@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'aloja';
+  src: url('./fonts/AlojaLight.woff') format('woff');
+  font-family: 'futura';
+  src: url('./fonts/Futura\ Extra\ Black\ font.ttf') format('ttf');
+}
+
