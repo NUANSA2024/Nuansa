@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-function Page1() {
+function IntroPage() {
   return (
     <div style={{ fontFamily: "aloja" }}>
       <h1
@@ -28,4 +28,4 @@ function Page1() {
   );
 }
 
-export default Page1;
+export default IntroPage;

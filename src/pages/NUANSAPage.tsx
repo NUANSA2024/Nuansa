@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-function Page3() {
+function NUANSAPage() {
   return (
     <div style={{ fontFamily: "futura" }}>
       <h1
@@ -19,4 +19,4 @@ function Page3() {
   );
 }
 
-export default Page3;
+export default NUANSAPage;
