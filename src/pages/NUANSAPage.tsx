@@ -1,13 +1,14 @@
 import React from "react";
 import "../index.css";
+import "../fonts.css";
 function NUANSAPage() {
   return (
     <div style={{ fontFamily: "futura" }}>
       <h1
         style={{
-          position: "relative",
-          top: "0px",
-          left: "0px",
+          position: "absolute",
+          top: "1900px",
+          left: "300px",
           lineHeight: "0.3",
           zIndex: "3",
           display: "inline-flex",

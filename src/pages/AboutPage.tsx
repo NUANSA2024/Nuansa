@@ -1,13 +1,14 @@
 import React from "react";
 import "../index.css";
+import "../fonts.css";
 function Page2() {
   return (
     <div style={{ fontFamily: "futura" }}>
       <h1
         style={{
-          position: "relative",
-          top: "190px",
-          left: "950px",
+          position: "absolute",
+          top: "1090px",
+          left: "990px",
           lineHeight: "0.3",
         }}
       >
@@ -15,8 +16,8 @@ function Page2() {
       </h1>
       <h1
         style={{
-          position: "relative",
-          top: "190px",
+          position: "absolute",
+          top: "1190px",
           left: "923px",
           lineHeight: "0.3",
         }}

@@ -1,6 +1,12 @@
 @font-face {
     font-family: "aloja";
     src: url("./fonts/AlojaLight.woff") format("woff");
+}
+@font-face {
     font-family: "futura";
-    src: url("./fonts/Futura\ Extra\ Black\ font.ttf") format("ttf");
+    src: url("./fonts/Futura\ Book\ font.ttf") format("ttf");
+}
+@font-face {
+    font-family: "brixton";
+    src: url("./fonts/BrixtonSansRg.otf") format("otf");
 }

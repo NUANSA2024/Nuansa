@@ -11,7 +11,7 @@
   font-family:'aloja';
 }
 .App-header2 {
-  background-color: #ED994F;
+  background-color:#ED994F;
   min-height: 150vh;
   display: flex;
   font-size: calc(50px + 2vmin);
@@ -23,4 +23,20 @@
   display: flex;
   font-size: calc(35px + 2vmin);
   color: rgb(255, 255, 255);
+}
+
+.App-header4 {
+  background-color: #9A5434;
+  min-height: 150vh;
+  display: flex;
+  font-size: calc(35px + 2vmin);
+  color: rgb(255, 255, 255);
+}
+.App-header5 {
+  background-color: #223f4f;
+  min-height: 100vh;
+  display: flex;
+  font-size: calc(30px + 2vmin);
+  color: rgb(255, 255, 255);
+  font-family:'aloja';
 }
