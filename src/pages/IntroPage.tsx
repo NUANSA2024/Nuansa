@@ -26,6 +26,10 @@ function IntroPage() {
       >
         2024
       </h1>
+      <img
+        src="/first_page.png"
+        style={{ position: "absolute", top: "50px", left: "850px" }}
+      ></img>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
 import "../fonts.css";
-function Page2() {
+function AboutPage() {
   return (
     <div style={{ fontFamily: "futura" }}>
       <h1
@@ -28,4 +28,4 @@ function Page2() {
   );
 }
 
-export default Page2;
+export default AboutPage;

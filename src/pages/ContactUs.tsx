@@ -15,6 +15,39 @@ function ContactUs() {
       >
         Contact Us!
       </h1>
+      <img
+        src="/message.png"
+        style={{
+          height: 80,
+          width: 80,
+          position: "absolute",
+          top: "4100px",
+          left: "700px",
+          zIndex: "0",
+        }}
+      ></img>
+      <img
+        src="/person.png"
+        style={{
+          height: 80,
+          width: 80,
+          position: "absolute",
+          top: "4100px",
+          left: "500px",
+          zIndex: "0",
+        }}
+      ></img>
+      <img
+        src="/phone.png"
+        style={{
+          height: 80,
+          width: 80,
+          position: "absolute",
+          top: "4100px",
+          left: "900px",
+          zIndex: "0",
+        }}
+      ></img>
     </div>
   );
 }
