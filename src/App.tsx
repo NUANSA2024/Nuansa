@@ -1,4 +1,11 @@
 import React from "react";
+<<<<<<< HEAD
+=======
+// import logo from "./logo.svg";
+import IntroPage from "./pages/IntroPage";
+import AboutPage from "./pages/AboutPage";
+import NUANSAPage from "./pages/NUANSAPage";
+>>>>>>> 1d819bd (temp)
 import "./App.css";
 import "./index.css";
 import "./fonts.css";
