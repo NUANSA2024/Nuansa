@@ -4,28 +4,24 @@ import "../fonts.css";
 import { Link } from "react-router-dom";
 function NUANSAHistory() {
   return (
-    <div style={{ fontFamily: "cursive" }}>
+    <div id="wrapper" style={{ fontFamily: "cursive" }}>
       <h1
         style={{
-          position: "absolute",
-          top: "2950px",
-          left: "350px",
-          lineHeight: "0.3",
           fontFamily: "aloja",
+          textAlign: "center"
         }}
       >
         NUANSA History
       </h1>
+      <div style={{display: "flex"}}>
       <Link to="/NUANSA2018" rel="noreferrer">
         <img
           src="/Greybox.png"
           style={{
             height: 400,
-            width: 750,
-            position: "absolute",
-            top: "3250px",
-            left: "0px",
-            zIndex: "0",
+            width: "40vw",
+            alignSelf: "left",
+            marginRight: "2vw"
           }}
         ></img>
       </Link>
@@ -33,13 +29,12 @@ function NUANSAHistory() {
         src="/Greybox.png"
         style={{
           height: 400,
-          width: 750,
-          position: "absolute",
-          top: "3250px",
-          left: "780px",
-          zIndex: "0",
+          width: "40vw",
+          alignSelf: "right",
+          marginLeft: "2vw"
         }}
       ></img>
+      </div>
     </div>
   );
 }

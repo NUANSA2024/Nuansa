@@ -1,56 +1,79 @@
 .App {
-  text-align: center;
-  background-color: #2088c0;
+    text-align: center;
+    background-color: #2088c0;
 }
 
 .App-header {
-  background-color: #223f4f;
-  min-height: 100vh;
-  display: flex;
-  font-size: calc(50px + 2vmin);
-  color: rgb(255, 255, 255);
-  font-family:'aloja';
-  margin: 0;
+    background-color: #223f4f;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    font-size: calc(50px + 2vmin);
+    color: rgb(255, 255, 255);
+    font-family: "aloja";
+    margin: 0;
+}
+.Gradient1 {
+  margin: 0;  
+  height: 40vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, #223f4f, #ed994f);
 }
 .App-header2 {
-  background-color:#ED994F;
-  min-height: 150vh;
-  display: flex;
-  font-size: calc(50px + 2vmin);
-  color: rgb(255, 255, 255);
-  margin: 0;
+    background-color: #ed994f;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    font-size: calc(50px + 2vmin);
+    color: rgb(255, 255, 255);
+    margin: 0;
 }
-.App-header3 {
-  background-color: #9A5434;
-  min-height: 100vh;
+
+.Gradient2 {
+  margin: 0;  
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  font-size: calc(35px + 2vmin);
-  color: rgb(255, 255, 255);
-  margin: 0;
+  color: white;
+  background-image: linear-gradient(to bottom, #ed994f, #9a5434);
+  font-family: "brilliant";
+}
+
+.App-header3 {
+    background-color: #9a5434;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-size: calc(35px + 2vmin);
+    color: rgb(255, 255, 255);
+    margin: 0;
 }
 
 .App-header4 {
-  background-color: #9A5434;
-  min-height: 150vh;
-  display: flex;
-  font-size: calc(35px + 2vmin);
-  color: rgb(255, 255, 255);
-  margin: 0;
+    background-color: #9a5434;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-size: calc(35px + 2vmin);
+    color: rgb(255, 255, 255);
+    margin: 0;
 }
 .App-header5 {
-  background-color: #223f4f;
-  min-height: 100vh;
-  display: flex;
-  font-size: calc(30px + 2vmin);
-  color: rgb(255, 255, 255);
-  font-family:'aloja';
-  margin: 0;
+    background-color: #223f4f;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-size: calc(30px + 2vmin);
+    color: rgb(255, 255, 255);
+    font-family: "aloja";
+    margin: 0;
 }
 .App-header6 {
-  background-color: #223f4f;
-  min-height: 300vh;
-  display: flex;
-  font-size: calc(50px + 2vmin);
-  color: rgb(255, 255, 255);
-  margin:0;
+    background-color: #223f4f;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-size: calc(50px + 2vmin);
+    color: rgb(255, 255, 255);
+    margin: 0;
 }

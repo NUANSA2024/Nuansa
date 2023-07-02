@@ -10,3 +10,7 @@
     font-family: "brixton";
     src: url("./fonts/BrixtonSansRg.otf") format("otf");
 }
+@font-face {
+    font-family: "brilliant";
+    src: url("./fonts/Brilliant.ttf") format("ttf");
+}
