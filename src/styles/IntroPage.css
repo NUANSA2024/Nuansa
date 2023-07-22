@@ -1,0 +1,25 @@
+.text-intro-container {
+    line-height: "1";
+    font-family: "aloja";
+    text-align: "left";
+}
+
+.image-intro-container {
+  max-width: 100%; /* Ensures the container does not exceed its parent's width */
+  max-height: 100%; /* Sets the maximum height of the container to the viewport height */
+  position: relative;
+  justify-content: right;
+  align-items: top;
+}
+
+.image-intro {
+  height: 130vh;
+  width: auto
+}
+
+.image-contact {
+    height: 80;
+    width: 80;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}

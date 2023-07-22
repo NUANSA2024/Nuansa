@@ -6,9 +6,9 @@
 .App-header {
     background-color: #223f4f;
     height: 80vh;
-    width: 100vw;
+    min-width: 100vw;
     display: flex;
-    font-size: calc(50px + 2vmin);
+    font-size: 5vw;
     color: rgb(255, 255, 255);
     font-family: "aloja";
     margin: 0;

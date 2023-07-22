@@ -1,10 +1,10 @@
 import React from "react";
-import "../index.css";
+import "../styles/IntroPage.css";
 import "../fonts.css";
 function IntroPage() {
     return (
-        <div id="wrapper" style={{ fontFamily: "cursive", display: "flex", alignItems:"center", width: "100%"}}>
-          <div style = {{width: "200px"}}></div>
+        <div id="wrapper" style={{ display: "flex" }}>
+          <div style = {{left:"20vw"}}></div>
             <div>
                 <h1
                     className = "child"
@@ -17,16 +17,10 @@ function IntroPage() {
                     <br />NUANSA<br />2024
                 </h1>
             </div>
-            <div style={{height: "100%", width: "100%", textAlign: "right"}}>
+            <div className="image-intro-container">
                 <img
                     src="/first_page.png"
-                    className="child"
-                    style={{
-                      height: "120vh",
-                      width: "40vw",
-                      objectFit: "cover",
-                      objectPosition: "top"
-                    }}
+                    className="image-intro"
                 ></img>
             </div>
         </div>
