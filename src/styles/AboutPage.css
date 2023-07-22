@@ -1,0 +1,40 @@
+.header-about {
+    font-family: aloja;
+    text-align: center;
+    margin: 0em;
+    position: relative;
+    z-index: 1;
+}
+
+.text-container-about {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    background-color: #9a5434;
+    padding: 0.5em;
+    border-radius: 10px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.text-about {
+    margin: 0;
+    font-family: futura;
+    font-size: 2.4vw;
+    text-align: justify;
+    vertical-align: text-top;
+    width: 100%;
+}
+
+/* Media query for smaller viewports */
+@media screen and (max-width: 1000px) {
+    .text-about {
+        font-size: 3vw; /* Set a larger font size for smaller viewports */
+    }
+}
+
+/* Media query for smaller viewports */
+@media screen and (max-width: 600px) {
+    .text-about {
+        font-size: 4vw; /* Set a larger font size for smaller viewports */
+    }
+}

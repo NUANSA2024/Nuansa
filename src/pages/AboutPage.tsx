@@ -1,36 +1,18 @@
 import React from "react";
-import "../index.css";
+import "../styles/AboutPage.css";
 import "../fonts.css";
 function AboutPage() {
     return (
         <div id="wrapper">
             <div>
-                <h2
-                    style={{
-                        fontFamily: "aloja",
-                        textAlign: "center",
-                        margin: "0.5em"
-                    }}
+                <h2 className="header-about"
                 >
                     About Nuansa
                 </h2>
             </div>
-            <div
-                style={{
-                    margin: "0.5em",
-                    backgroundColor: "#9a5434",
-                    padding: "0.5em",
-                    borderRadius: "10px",
-                }}
+            <div className="text-container-about"
             >
-                <h3
-                    style={{
-                        margin: "0",
-                        fontFamily: "futura",
-                        fontSize: "0.4em",
-                        textAlign: "justify",
-                        verticalAlign: "text-top"
-                    }}
+                <h3 className="text-about"
                 >
                     NUANSA is a cultural production group based in the National
                     University of Singapore. Through contemporary musical

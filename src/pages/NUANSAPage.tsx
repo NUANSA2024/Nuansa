@@ -1,16 +1,12 @@
 import React from "react";
-import "../index.css";
+import "../styles/NUANSAPage.css";
 import "../fonts.css";
 function NUANSAPage() {
     return (
         <div id="wrapper">
-            <div
-                style={{ fontFamily: "aloja", fontSize: "1.5em", margin: "0", zIndex: "1", position: "relative"}}
+            <div 
             >
-                <h1
-                    style={{
-                        textAlign: "center",
-                    }}
+                <h1 className= "header-nuansa"
                 >
                     NUANSA 2024 <br />
                     Keong Mas: Daha to Surabaya
@@ -18,26 +14,13 @@ function NUANSAPage() {
             </div>
             <div style={{ display: "flex", margin: "0" }}>
                 <img
-                    src="/keong with leaves.png"
-                    style={{
-                        height: 225,
-                        transform: "translate(-10vw, -30vh) rotate(15deg)"
-                    }}
+                    className = "img-keong" src="/keong with leaves.png"
                 ></img>
-                <div style={{position: "absolute", left: "13%"}}>
-                    <h1 style={{ fontSize: "1.5em", textAlign: "left", margin: 0 }}>
+                <div style={{position: "absolute", left: "10vw"}}>
+                    <h1 className = "subheader1-nuansa">
                         Overview
                     </h1>
-                    <h3
-                        style={{
-                            fontFamily: "futura",
-                            width: "35vw",
-                            textAlign: "justify",
-                            fontSize: "0.7em",
-                            backgroundColor: "#9a5434",
-                            padding: "0.5em",
-                            borderRadius: "10px",
-                        }}
+                    <h3 className = "text-nuansa"
                     >
                         The musical “Keong Mas: Daha to Surabaya” reimagines the
                         well-loved Javanese folklore Keong Mas. The folklore
@@ -57,19 +40,10 @@ function NUANSAPage() {
                     </h3>
                 </div>
                 <div style={{position: "absolute", right: "13%", zIndex: "1"}}>
-                    <h1 style={{ fontSize: "1.5em", textAlign: "right", margin: "0"}}>
+                    <h1 className = "subheader2-nuansa">
                         Synopsis
                     </h1>
-                    <h3
-                        style={{
-                            fontFamily: "futura",
-                            width: "35vw",
-                            textAlign: "justify",
-                            fontSize: "0.7em",
-                            backgroundColor: "#9a5434",
-                            padding: "0.5em",
-                            borderRadius: "10px",
-                        }}
+                    <h3 className= "text-nuansa"
                     >
                         In a twist of fate, Candra Kirana, the cherished
                         princess of Daha, found herself inexplicably transported

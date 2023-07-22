@@ -1,0 +1,39 @@
+.header-nuansa {
+    font-family: aloja;
+    font-size: 4vw;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+.subheader1-nuansa {
+    position: relative;
+    font-size: 3vw;
+    text-align: "left";
+    margin: 0;
+}
+
+.subheader2-nuansa {
+    position: relative;
+    font-size: 3vw;
+    text-align: "right";
+    margin: 0;
+    z-index: 1;
+}
+
+.img-keong {
+    height: 20vh;
+    left: 10vw;
+    transform: translate(-10vw, -30vh) rotate(15deg);
+}
+
+.text-nuansa {
+    font-family: futura;
+    width: 38vw;
+    text-align: justify;
+    font-size: 1.5vw;
+    background-color: #9a5434;
+    padding: 0.5em;
+    border-radius: 10px;
+}

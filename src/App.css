@@ -6,7 +6,7 @@
 .App-header {
     background-color: #223f4f;
     height: 80vh;
-    min-width: 100vw;
+    min-width: 100%;
     display: flex;
     font-size: 5vw;
     color: rgb(255, 255, 255);
@@ -16,23 +16,23 @@
 .Gradient1 {
   margin: 0;  
   height: 40vh;
-  width: 100vw;
+  min-width: 100vw;
   background-image: linear-gradient(to bottom, #223f4f, #ed994f);
 }
 .App-header2 {
     background-color: #ed994f;
     height: 90vh;
-    width: 100vw;
+    min-width: 100vw;
     display: flex;
-    font-size: calc(50px + 2vmin);
+    font-size: 5vw;
     color: rgb(255, 255, 255);
     margin: 0;
 }
 
 .Gradient2 {
   margin: 0;  
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   color: white;
   background-image: linear-gradient(to bottom, #ed994f, #9a5434);
@@ -44,7 +44,7 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    font-size: calc(35px + 2vmin);
+    font-size: 5vw;
     color: rgb(255, 255, 255);
     margin: 0;
 }

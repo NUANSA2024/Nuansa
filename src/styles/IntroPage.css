@@ -1,20 +1,28 @@
 .text-intro-container {
-    line-height: "1";
     font-family: "aloja";
-    text-align: "left";
+    align-items: center;
+    text-align: left;
+    height: 100%;
+    max-width: 30vw;
+    line-height: 1;
+    padding-left: 5vw;
+    display: flex;
 }
 
 .image-intro-container {
-  max-width: 100%; /* Ensures the container does not exceed its parent's width */
+  max-width: 60vw; /* Ensures the container does not exceed its parent's width */
   max-height: 100%; /* Sets the maximum height of the container to the viewport height */
   position: relative;
   justify-content: right;
   align-items: top;
+  display:flex;
 }
 
 .image-intro {
   height: 130vh;
-  width: auto
+  width: auto;
+  position: relative;
+  /* z-index: -1; */
 }
 
 .image-contact {
