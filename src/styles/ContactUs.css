@@ -1,0 +1,35 @@
+.header-nuansa-contact {
+    font-family:brixton;
+    font-size: 5vw;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    top: 15vw;
+}
+
+.phone {
+    position: relative;
+    top: 15vw;
+    align-items: center;
+    height: 5vw;
+    width: 5vw;
+    left: 10vw;
+}
+.person {
+    position: relative;
+    top: 15vw;
+    align-items: center;
+    height: 5vw;
+    width: 5vw;
+    right: 0vw;
+    
+}
+.message {
+    position: relative;
+    top: 15vw;
+    align-items: center;
+    height: 5vw;
+    width: 5vw;
+    right: 10vw;
+}

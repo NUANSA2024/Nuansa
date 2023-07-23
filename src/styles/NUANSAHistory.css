@@ -1,0 +1,22 @@
+.header-nuansa-history {
+    font-family: aloja;
+    font-size: 6vw;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    top: 10vw;
+}
+.grey-box1 {
+    height: 30vw;
+    width: 40vw;
+    position: relative;
+    top: 10vw;
+}
+.grey-box2 {
+    height: 30vw;
+    width: 40vw;
+    position: relative;
+    top: 10vw;
+    left: 2vw;
+}
