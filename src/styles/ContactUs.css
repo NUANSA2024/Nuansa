@@ -5,12 +5,10 @@
     z-index: 1;
     position: relative;
     text-align: center;
-    top: 15vw;
 }
 
 .phone {
     position: relative;
-    top: 15vw;
     align-items: center;
     height: 5vw;
     width: 5vw;
@@ -18,7 +16,6 @@
 }
 .person {
     position: relative;
-    top: 15vw;
     align-items: center;
     height: 5vw;
     width: 5vw;
@@ -27,9 +24,12 @@
 }
 .message {
     position: relative;
-    top: 15vw;
     align-items: center;
     height: 5vw;
     width: 5vw;
     right: 10vw;
+}
+.container-all-contact{
+    display: flex;
+    align-items: center;
 }
