@@ -30,12 +30,14 @@
 
 .img-keong {
     height: 20%;
+    width: auto;
     left: 15vw;
     transform: translate(-10vw, -30vh) rotate(15deg);
     top: 49vh;
     z-index: 0;
     position: relative;
 }
+
 .img-girl {
     height: 40%;
     right:8vw;
@@ -48,48 +50,40 @@
     font-family: futura;
     width: 38vw;
     text-align: justify;
-    font-size: 1.5vw;
+    font-size: auto;
 }
 .text-nuansa2 {
     font-family: futura;
     width: 38vw;
     text-align: justify;
-    font-size: 1.5vw;
+    font-size: auto;
 }
 .text-nuansa3 {
     font-Family: "brilliant";
     margin: "0" ;
     top: 8vw;
     position: relative;
-    font-size: 2vw;
+    font-size: auto;
 }
 .text-container-page1 {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 1vw;
+    margin-right: 1vw;
     margin-top: 25%;
     background-color: #9a5434;
     padding: 0.5em;
     border-radius: 10px;
+    width: 30vw;
     max-height: 100%;
     max-width: 100%;
 }
-.text-container-page2 {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    margin-top: 25%;
-    background-color: #9a5434;
-    padding: 0.5em;
-    border-radius: 10px;
-    max-height: 100%;
-    max-width: 100%;
-}
+
 .image-page-container {
     max-width: 15%; /* Ensures the container does not exceed its parent's width */
     max-height: 20%; /* Sets the maximum height of the container to the viewport height */
     position: relative;
     justify-content: right;
     align-items: top;
-    display:flex;
+    display: flex;
   }
   .container-all{
     max-width: 100%; /* Ensures the container does not exceed its parent's width */

@@ -23,9 +23,9 @@ function Combined() {
       <h2 className="Gradient2">
         <NUANSAPage />
       </h2>
-      <h2 className="App-header4">
+      {/* <h2 className="App-header4">
         <NUANSAHistory />
-      </h2>
+      </h2> */}
       <h2 className="App-header5">
         <ContactUs />
       </h2>
