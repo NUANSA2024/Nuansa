@@ -5,7 +5,15 @@
     z-index: 1;
     position: relative;
     text-align: center;
-    top: 10vw;
+}
+.container-header {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+.spacer-nuansa {
+    width:0.1vw;
 }
 
 .subheader1-nuansa {
@@ -13,7 +21,6 @@
     font-size: 3vw;
     text-align: "left";
     margin: 0;
-    top: 10vw;
     z-index: 1;
     right: 3vw;
 }
@@ -24,37 +31,31 @@
     text-align: "right";
     margin: 0;
     z-index: 1;
-    top: 10vw;
     right: 1vw;
 }
 
 .img-keong {
-    height: 20%;
-    left: 15vw;
+    width: 100%;
+    height: auto;
     transform: translate(-10vw, -30vh) rotate(15deg);
-    top: 49vh;
-    z-index: 0;
-    position: relative;
+    
 }
 .img-girl {
-    height: 40%;
-    right:8vw;
-    top: 17vh;
-    z-index: 0;
-    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .text-nuansa1 {
     font-family: futura;
-    width: 38vw;
+    width: 100%;
     text-align: justify;
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
 }
 .text-nuansa2 {
     font-family: futura;
-    width: 38vw;
+    width: 100%;
     text-align: justify;
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
 }
 .text-nuansa3 {
     font-Family: "brilliant";
@@ -64,40 +65,35 @@
     font-size: 2vw;
 }
 .text-container-page1 {
-    margin-left: 0.5em;
+    /* margin-left: 0.5em;
     margin-right: 0.5em;
-    margin-top: 25%;
+    margin-top: 25%; */
     background-color: #9a5434;
     padding: 0.5em;
     border-radius: 10px;
-    max-height: 100%;
-    max-width: 100%;
+    max-height: auto;
+    max-width: 30vw;
 }
 .text-container-page2 {
-    margin-left: 0.5em;
+    /* margin-left: 0.5em;
     margin-right: 0.5em;
-    margin-top: 25%;
+    margin-top: 25%; */
     background-color: #9a5434;
     padding: 0.5em;
     border-radius: 10px;
-    max-height: 100%;
-    max-width: 100%;
+    max-height: auto;
+    max-width: 30vw;
 }
 .image-page-container {
-    max-width: 15%; /* Ensures the container does not exceed its parent's width */
-    max-height: 20%; /* Sets the maximum height of the container to the viewport height */
-    position: relative;
-    justify-content: right;
-    align-items: top;
-    display:flex;
+    max-width: 10vw;
+    max-height: auto;
+    overflow: hidden;
   }
   .container-all{
     max-width: 100%; /* Ensures the container does not exceed its parent's width */
-    max-height: 50%; /* Sets the maximum height of the container to the viewport height */
+    max-height: 100%; /* Sets the maximum height of the container to the viewport height */
     position: relative;
     justify-content: center;
     align-items: top;
     display:flex;
-    margin-top: 0.1%;
-    margin-bottom: 0.1%;
   }

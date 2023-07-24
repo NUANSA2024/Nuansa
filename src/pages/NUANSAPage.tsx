@@ -4,7 +4,7 @@ import "../fonts.css";
 function NUANSAPage() {
     return (
         <div id="wrapper">
-            <div 
+            <div className="container-header" 
             >
                 <h1 className= "header-nuansa-page"
                 >
@@ -42,6 +42,9 @@ function NUANSAPage() {
                             finding a home.
                         </h3>
                     </div>
+                </div>
+                <div className="spacer-nuansa">
+
                 </div>
                 <div >
                     <h1 className = "subheader2-nuansa">
