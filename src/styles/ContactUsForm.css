@@ -1,4 +1,7 @@
 .Contact-form{
     max-width: 450px;
-    background-color: #223f4f;
+    background-color: #094162;
 }
+.MuiInputLabel-root {
+    color: rgb(255, 255, 255) !important;
+  }
