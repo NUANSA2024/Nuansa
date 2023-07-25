@@ -4,8 +4,8 @@ import "../fonts.css";
 function IntroPage() {
     return (
         <div id="wrapper" style={{ display: "flex" }}>
-            <div>
-                <h1 className="text-intro-container">
+            <div className = "text-intro-container">
+                <h1 className="text-intro">
                     NUANSA
                     <br />
                     2024
