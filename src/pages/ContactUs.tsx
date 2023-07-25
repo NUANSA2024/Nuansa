@@ -5,6 +5,8 @@ import "../styles/ContactUs.css";
 import "../styles/ContactUsForm.css";
 import { Link } from "react-router-dom";
 import {Card, Typography, CardContent, TextField, Grid, Button} from "@mui/material";
+import CopyEmail from "../components/CopyEmail";
+
 function ContactUs() {
     return (
         <div id="wrapper" className="container-all-contact">
@@ -13,27 +15,25 @@ function ContactUs() {
                 >
                     Contact Us!
                 </h1>
-                <div className="images">
-                    <h2>
+                <div className="container-images">
+                    <div>
                         <Link to="https://m.facebook.com/nuansa.culturalproductions">
-                    <img src="/facebook.png" className="message"></img>
+                    <img src="/facebook.png" className="image-facebook"></img>
                     </Link>
+                    </div>
+                    <div>
                     <Link to="http://instagram.com/nuansacp">
-                    <img src="/instagram.png" className="person"></img>
+                    <img src="/instagram.png" className="image-instagram"></img>
                     </Link>
-                    </h2>
+                    </div>
                 </div>
-                <div>
-                    <h1 className="text-nuansa-page-email">
-                        Email us at nuansa.corprelations@gmail.com
-                    </h1>
-                </div>
+                <CopyEmail />
             </div>
             <div>
                 <form action="https://formsubmit.co/100745e7aa9062fbef2d970a495761b0" method="POST">
                     <input type="text" name="_honey" style={{display:"none"}}></input>
                     {/* <input type="hidden" name="_captcha" value="false"></input> */}
-                    <Typography> Interested in sponsoring us?</Typography>
+                    <Typography sx={{fontSize: "4vmax", fontFamily: "futura"}}> Interested in sponsoring us?</Typography>
                         <Card style={{backgroundColor: "#223f4f",maxWidth:450}}>
                             <CardContent>
                                 <Grid container spacing={1}>

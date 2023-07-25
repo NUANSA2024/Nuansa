@@ -25,17 +25,3 @@
     width: 100%;
     height: 100%;
 }
-
-/* Media query for smaller viewports */
-@media screen and (max-width: 1000px) {
-    .text-about {
-        font-size: 3vw; /* Set a larger font size for smaller viewports */
-    }
-}
-
-/* Media query for smaller viewports */
-@media screen and (max-width: 600px) {
-    .text-about {
-        font-size: 4vw; /* Set a larger font size for smaller viewports */
-    }
-}

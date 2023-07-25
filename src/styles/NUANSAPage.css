@@ -5,12 +5,11 @@
     margin: 0;
     z-index: 1;
     position: relative;
-    text-align: center;
     height: 100%;
 }
 
 .container-header {
-    height: 10vh;
+    height: auto;
     max-width: 100%;
     position: relative;
 }
@@ -51,7 +50,7 @@
     font-family: futura;
     width: 100%;
     text-align: justify;
-    font-size: 1.5vmax;
+    font-size: 1.2vmax;
 }
 
 .subtext-nuansa {
@@ -59,12 +58,13 @@
     margin: 0;
     position: relative;
     line-height: 1;
-    font-size: 2vmax;
+    font-size: 1.5vmax;
 }
 
 h3.subtext-nuansa{
-    margin-right: 2vh;
-    font-size: 1vmax;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+    font-size: 0.5vmax;
     text-align: right;  
 }
 
@@ -83,7 +83,7 @@ h3.subtext-nuansa{
 
 .container-all-nuansa {
     max-width: 100%; /* Ensures the container does not exceed its parent's width */
-    height: 85vh;
+    max-height: 85vh;
     position: relative;
     justify-content: center;
     align-items: top;
@@ -92,7 +92,10 @@ h3.subtext-nuansa{
 
 .container-subtext-nuansa {
     height: 5vh;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    position:absolute;
+    bottom: 1vh;
+    /* display: flex;
+    flex-direction: column; */
     /* align-items: flex-end; */
 }
