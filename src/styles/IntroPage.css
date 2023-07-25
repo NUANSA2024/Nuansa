@@ -17,6 +17,7 @@
   justify-content: right;
   align-items: top;
   display:flex;
+  z-index: 1;
 }
 
 .image-intro {
