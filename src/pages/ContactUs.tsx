@@ -29,7 +29,7 @@ function ContactUs() {
                 </div>
                 <CopyEmail />
             </div>
-            <div>
+            <div className="container-form">
                 <form action="https://formsubmit.co/nuansa.corprelations@gmail.com" method="POST">
                     <input type="text" name="_honey" style={{display:"none"}}></input>
                     {/* <input type="hidden" name="_captcha" value="false"></input> */}
