@@ -7,7 +7,7 @@
     line-height: 1;
     padding-left: 5vw;
     display: flex;
-    z-index: 1;
+    z-index: 2;
 }
 
 .image-intro-container {
@@ -23,7 +23,7 @@
   height: 130vh;
   width: auto;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .image-contact {
