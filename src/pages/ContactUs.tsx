@@ -30,7 +30,7 @@ function ContactUs() {
                 </div>
             </div>
             <div>
-                <form action="https://formsubmit.co/100745e7aa9062fbef2d970a495761b0" method="POST">
+                <form action="https://formsubmit.co/nuansa.corprelations@gmail.com" method="POST">
                     <input type="text" name="_honey" style={{display:"none"}}></input>
                     {/* <input type="hidden" name="_captcha" value="false"></input> */}
                     <Typography> Interested in sponsoring us?</Typography>
