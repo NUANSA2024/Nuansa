@@ -23,7 +23,7 @@
   height: 130vh;
   width: auto;
   position: relative;
-  /* z-index: -1; */
+  z-index: -1;
 }
 
 .image-contact {
