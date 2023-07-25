@@ -30,33 +30,36 @@ function ContactUs() {
                 </div>
             </div>
             <div>
-            <Typography> Interested in sponsoring us?</Typography>
-                <Card style={{backgroundColor: "#223f4f",maxWidth:450}}>
-                    <CardContent>
-                        <Grid container spacing={1}>
-                            <Grid xs={12} sm={6} item>
-                                <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"} , InputLabelProps:{color:"white"} }} label="First Name" placeholder="Enter first name" variant="filled" fullWidth required/>
-                            </Grid>
-                            <Grid xs={12} sm={6} item>
-                                <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"} }} label="Last Name" placeholder="Enter Last name" variant="filled" color="primary" fullWidth required />
-                            </Grid>
-                            <Grid xs={12}item>
-                                <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"}  }} type="email" label="Email" placeholder="Enter Email" variant="filled" fullWidth required />
-                            </Grid>
-                            <Grid xs={12}item>
-                                <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"}  }} type="number" label="Phone Number" placeholder="Enter Phone NUmber" variant="filled" fullWidth required />
-                            </Grid>
-                            <Grid xs={12}item>
-                                <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"}  }} label="Message" multiline
-  inputProps={{ style: { color: "white" } }} placeholder="Enter Message" variant="filled" fullWidth />
-                            </Grid>
-                            <Grid xs={12}item>
-                                <Button type="submit" variant="contained" color="primary" fullWidth> Send us an email</Button>
-                            </Grid>
-                        </Grid>
-                    </CardContent>
-                </Card>
-
+                <form action="https://formsubmit.co/100745e7aa9062fbef2d970a495761b0" method="POST">
+                    <input type="text" name="_honey" style={{display:"none"}}></input>
+                    {/* <input type="hidden" name="_captcha" value="false"></input> */}
+                    <Typography> Interested in sponsoring us?</Typography>
+                        <Card style={{backgroundColor: "#223f4f",maxWidth:450}}>
+                            <CardContent>
+                                <Grid container spacing={1}>
+                                    <Grid xs={12} sm={6} item>
+                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"} , InputLabelProps:{color:"white"} }} label="First Name" name="name" placeholder="Enter first name" variant="filled" fullWidth required/>
+                                    </Grid>
+                                    <Grid xs={12} sm={6} item>
+                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"} }} label="Last Name" placeholder="Enter Last name" name="Last Name" variant="filled" color="primary" fullWidth required />
+                                    </Grid>
+                                    <Grid xs={12}item>
+                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"}  }} type="email" label="Email" name="email" placeholder="Enter Email" variant="filled" fullWidth required />
+                                    </Grid>
+                                    <Grid xs={12}item>
+                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"}  }} type="number" label="Phone Number" name="Phone" placeholder="Enter Phone NUmber" variant="filled" fullWidth required />
+                                    </Grid>
+                                    <Grid xs={12}item>
+                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"}  }} label="Message" name="Message" multiline
+                                            inputProps={{ style: { color: "white" } }} placeholder="Enter Message" variant="filled" fullWidth />
+                                    </Grid>
+                                    <Grid xs={12}item>
+                                        <Button type="submit" variant="contained" color="primary" fullWidth> Send us an email</Button>
+                                    </Grid>
+                                </Grid>
+                            </CardContent>
+                        </Card>
+                </form>
             </div>
         </div>
     );
