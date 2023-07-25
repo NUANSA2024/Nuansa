@@ -1,0 +1,6 @@
+let PastNuansas = {
+    {
+        url: "";
+        title: "";
+    }
+}

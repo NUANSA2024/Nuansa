@@ -7,19 +7,15 @@
     text-align: center;
 }
 
-.person {
+.image-facebook {
     position: relative;
-    align-items: center;
     height: 5vw;
     width: 5vw;
-    margin-left:2vw;
 }
-.message {
+.image-instagram {
     position: relative;
-    align-items: center;
     height: 5vw;
     width: 5vw;
-    margin-right: 2vw;
 }
 .container-all-contact{
     display: flex;
@@ -27,11 +23,29 @@
 }
 .container-header-logos{
     align-items: center;
+    width: 40vw;
 }
 .text-nuansa-page-email {
     font-family: futura;
+    cursor: pointer;
+    user-select: none;
     width: 100%;
-    text-align: justify;
+    text-align: center;
     font-size: 1.5vmax;
     align-self:center;
+}
+
+.container-images {
+    margin-top: 3vh;
+    display: flex;
+    text-align: center
+}
+
+.header-form {
+    font-size: 10000px;
+}
+
+.container-alert {
+    text-align: center;
+    max-width: 100%;
 }

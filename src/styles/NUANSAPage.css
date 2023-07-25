@@ -1,45 +1,46 @@
 .header-nuansa-page {
     font-family: aloja;
+    line-height: 1.2;
     font-size: 4vw;
     margin: 0;
     z-index: 1;
     position: relative;
-    text-align: center;
+    height: 100%;
 }
+
 .container-header {
+    height: auto;
     max-width: 100%;
-    max-height: 100%;
     position: relative;
 }
 
 .spacer-nuansa {
-    width:0.1vw;
+    width: 3vw;
 }
 
-.subheader1-nuansa {
+.subheader-left-nuansa {
     position: relative;
     font-size: 3vw;
-    text-align: "left";
+    text-align: left;
     margin: 0;
     z-index: 1;
-    right: 3vw;
 }
 
-.subheader2-nuansa {
+.subheader-right-nuansa {
     position: relative;
     font-size: 3vw;
-    text-align: "right";
+    text-align: right;
     margin: 0;
     z-index: 1;
-    right: 1vw;
 }
 
 .img-keong {
-    width: 100%;
+    width: 10vw;
     height: auto;
-    transform: translate(-10vw, -30vh) rotate(15deg);
-    
+    transform: translate(4vw) rotate(15deg);
+    z-index: 1;
 }
+
 .img-girl {
     width: 100%;
     height: auto;
@@ -49,51 +50,52 @@
     font-family: "futura";
     width: 100%;
     text-align: justify;
-    font-size: 1.5vmax;
+    font-size: 1.2vmax;
 }
-.text-nuansa2 {
-    font-family: "futura";
-    width: 100%;
-    text-align: justify;
-    font-size: 1.5vmax;
-}
-.text-nuansa3 {
-    font-family: "brilliant";
-    margin: "0" ;
-    top: 8vw;
+
+.subtext-nuansa {
+    font-family: brilliant;
+    margin: 0;
     position: relative;
-    font-size: 2vw;
+    line-height: 1;
+    font-size: 1.5vmax;
 }
-.text-container-page1 {
-    /* margin-left: 0.5em;
-    margin-right: 0.5em;
-    margin-top: 25%; */
+
+h3.subtext-nuansa{
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+    font-size: 0.5vmax;
+    text-align: right;  
+}
+
+.text-container-nuansa {
     background-color: #9a5434;
     padding: 0.5em;
     border-radius: 10px;
-    max-height: auto;
-    max-width: 30vw;
+    max-height: 100%;
+    max-width: 40vw;
 }
-.text-container-page2 {
-    /* margin-left: 0.5em;
-    margin-right: 0.5em;
-    margin-top: 25%; */
-    background-color: #9a5434;
-    padding: 0.5em;
-    border-radius: 10px;
-    max-height: auto;
-    max-width: 30vw;
-}
-.image-page-container {
+
+.container-image-nuansa {
     max-width: 10vw;
     max-height: auto;
-    overflow: hidden;
-  }
-  .container-all{
+}
+
+.container-all-nuansa {
     max-width: 100%; /* Ensures the container does not exceed its parent's width */
-    max-height: 100%; /* Sets the maximum height of the container to the viewport height */
+    max-height: 85vh;
     position: relative;
     justify-content: center;
     align-items: top;
-    display:flex;
-  }
+    display: flex;
+}
+
+.container-subtext-nuansa {
+    height: 5vh;
+    width: 100%;
+    position:absolute;
+    bottom: 1vh;
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: flex-end; */
+}
