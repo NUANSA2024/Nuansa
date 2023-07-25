@@ -49,3 +49,8 @@
     text-align: center;
     max-width: 100%;
 }
+
+.container-form {
+    max-width: 50vw;
+    max-height: 100%;
+}
