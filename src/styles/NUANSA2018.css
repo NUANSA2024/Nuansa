@@ -1,0 +1,43 @@
+.NUANSA2018-header{
+    font-family: aloja;
+    font-size: 7vw;
+    color: white;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+.NUANSA2018-title{
+    font-family: aloja;
+    font-size: 4vw;
+    color: white;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+.NUANSA2018-overwiew{
+    font-family: aloja;
+    font-size: 4vw;
+    color: white;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+.NUANSA2018-maincast{
+    font-family: aloja;
+    font-size: 4vw;
+    color: white;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+.container-2018{
+    min-width: 100vw; /* Ensures the container does not exceed its parent's width */
+    min-height: 100vh; /* Sets the maximum height of the container to the viewport height */
+    position: relative;
+    justify-content: center;
+    align-items: top;
+    background-color: #223f4f;
+    overflow: hidden;
+}
+    

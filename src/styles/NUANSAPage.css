@@ -1,97 +1,98 @@
 .header-nuansa-page {
     font-family: aloja;
+    line-height: 1.2;
     font-size: 4vw;
     margin: 0;
     z-index: 1;
     position: relative;
     text-align: center;
-    top: 10vw;
+    height: 100%;
 }
 
-.subheader1-nuansa {
+.container-header {
+    height: 10vh;
+    max-width: 100%;
     position: relative;
-    font-size: 3vw;
-    text-align: "left";
-    margin: 0;
-    top: 10vw;
-    z-index: 1;
-    right: 3vw;
 }
 
-.subheader2-nuansa {
+.spacer-nuansa {
+    width: 3vw;
+}
+
+.subheader-left-nuansa {
     position: relative;
     font-size: 3vw;
-    text-align: "right";
+    text-align: left;
     margin: 0;
     z-index: 1;
-    top: 10vw;
-    right: 1vw;
+}
+
+.subheader-right-nuansa {
+    position: relative;
+    font-size: 3vw;
+    text-align: right;
+    margin: 0;
+    z-index: 1;
 }
 
 .img-keong {
-    height: 20%;
-    width: auto;
-    left: 15vw;
-    transform: translate(-10vw, -30vh) rotate(15deg);
-    top: 49vh;
-    z-index: 0;
-    position: relative;
+    width: 10vw;
+    height: auto;
+    transform: translate(4vw) rotate(15deg);
+    z-index: 1;
 }
 
 .img-girl {
-    height: 40%;
-    right:8vw;
-    top: 17vh;
-    z-index: 0;
-    position: relative;
+    width: 100%;
+    height: auto;
 }
 
-.text-nuansa1 {
+.text-nuansa {
     font-family: futura;
-    width: 38vw;
+    width: 100%;
     text-align: justify;
-    font-size: auto;
+    font-size: 1.5vmax;
 }
-.text-nuansa2 {
-    font-family: futura;
-    width: 38vw;
-    text-align: justify;
-    font-size: auto;
-}
-.text-nuansa3 {
-    font-Family: "brilliant";
-    margin: "0" ;
-    top: 8vw;
+
+.subtext-nuansa {
+    font-family: brilliant;
+    margin: 0;
     position: relative;
-    font-size: auto;
+    line-height: 1;
+    font-size: 2vmax;
 }
-.text-container-page1 {
-    margin-left: 1vw;
-    margin-right: 1vw;
-    margin-top: 25%;
+
+h3.subtext-nuansa{
+    margin-right: 2vh;
+    font-size: 1vmax;
+    text-align: right;  
+}
+
+.text-container-nuansa {
     background-color: #9a5434;
     padding: 0.5em;
     border-radius: 10px;
-    width: 30vw;
     max-height: 100%;
-    max-width: 100%;
+    max-width: 40vw;
 }
 
-.image-page-container {
-    max-width: 15%; /* Ensures the container does not exceed its parent's width */
-    max-height: 20%; /* Sets the maximum height of the container to the viewport height */
-    position: relative;
-    justify-content: right;
-    align-items: top;
-    display: flex;
-  }
-  .container-all{
+.container-image-nuansa {
+    max-width: 10vw;
+    max-height: auto;
+}
+
+.container-all-nuansa {
     max-width: 100%; /* Ensures the container does not exceed its parent's width */
-    max-height: 50%; /* Sets the maximum height of the container to the viewport height */
+    height: 85vh;
     position: relative;
     justify-content: center;
     align-items: top;
-    display:flex;
-    margin-top: 0.1%;
-    margin-bottom: 0.1%;
-  }
+    display: flex;
+}
+
+.container-subtext-nuansa {
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+}
