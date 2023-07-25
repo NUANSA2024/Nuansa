@@ -4,7 +4,12 @@
 }
 @font-face {
     font-family: "futura";
-    src: url("./fonts/Futura\ Book\ font.ttf") format("ttf");
+    src: url("https://db.onlinewebfonts.com/t/02a0efa4275f78836dfc89db9e21feea.eot");
+    src: url("https://db.onlinewebfonts.com/t/02a0efa4275f78836dfc89db9e21feea.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/02a0efa4275f78836dfc89db9e21feea.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/02a0efa4275f78836dfc89db9e21feea.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/02a0efa4275f78836dfc89db9e21feea.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/02a0efa4275f78836dfc89db9e21feea.svg#Futura-Book")format("svg");
 }
 @font-face {
     font-family: "brixton";

@@ -46,19 +46,19 @@
 }
 
 .text-nuansa1 {
-    font-family: futura;
+    font-family: "futura";
     width: 100%;
     text-align: justify;
     font-size: 1.5vmax;
 }
 .text-nuansa2 {
-    font-family: futura;
+    font-family: "futura";
     width: 100%;
     text-align: justify;
     font-size: 1.5vmax;
 }
 .text-nuansa3 {
-    font-Family: "brilliant";
+    font-family: "brilliant";
     margin: "0" ;
     top: 8vw;
     position: relative;
