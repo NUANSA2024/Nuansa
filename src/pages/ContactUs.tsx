@@ -29,8 +29,8 @@ function ContactUs() {
                 </div>
                 <CopyEmail />
             </div>
-            <div className="container-form">
-                <form action="https://formsubmit.co/100745e7aa9062fbef2d970a495761b0" method="POST">
+            <div>
+                <form action="https://formsubmit.co/nuansa.corprelations@gmail.com" method="POST">
                     <input type="text" name="_honey" style={{display:"none"}}></input>
                     {/* <input type="hidden" name="_captcha" value="false"></input> */}
                     <Typography sx={{fontSize: "3vmax", fontFamily: "futura"}}> Interested in sponsoring us?</Typography>
