@@ -8,7 +8,7 @@ import {Card, Typography, CardContent, TextField, Grid, Button} from "@mui/mater
 function ContactUs() {
     return (
         <div id="wrapper" className="container-all-contact">
-            <div>
+            <div className="container-header-logos">
                 <h1 className="header-nuansa-contact"
                 >
                     Contact Us!
@@ -16,38 +16,50 @@ function ContactUs() {
                 <div className="images">
                     <h2>
                         <Link to="https://m.facebook.com/nuansa.culturalproductions">
-                    <img src="/message.png" className="message"></img>
+                    <img src="/facebook.png" className="message"></img>
                     </Link>
                     <Link to="http://instagram.com/nuansacp">
-                    <img src="/person.png" className="person"></img>
+                    <img src="/instagram.png" className="person"></img>
                     </Link>
-                    <img src="/phone.png" className="phone"></img>
                     </h2>
+                </div>
+                <div>
+                    <h1 className="text-nuansa-page-email">
+                        Email us at nuansa.corprelations@gmail.com
+                    </h1>
                 </div>
             </div>
             <div>
-                <Card className="Contact-form">
-                    <CardContent>
-                        <Grid container spacing={1}>
-                            <Grid xs={12} sm={6} item>
-                                <TextField sx={{bgcolor: "white" }} label="First Name" placeholder="Enter first name" variant="filled" fullWidth required/>
-                            </Grid>
-                            <Grid xs={12} sm={6} item>
-                                <TextField sx={{bgcolor: "white" }} label="Last Name" placeholder="Enter Last name" variant="filled" color="primary" fullWidth required />
-                            </Grid>
-                            <Grid xs={12}item>
-                                <TextField sx={{bgcolor: "white" }} type="email" label="Email" placeholder="Enter Email" variant="filled" fullWidth required />
-                            </Grid>
-                            <Grid xs={12}item>
-                                <TextField sx={{bgcolor: "white" }} type="number" label="Phone Number" placeholder="Enter Phone NUmber" variant="filled" fullWidth required />
-                            </Grid>
-                            <Grid xs={12}item>
-                                <Button type="submit" variant="contained" color="primary" fullWidth> Send us an email</Button>
-                            </Grid>
-                        </Grid>
-                    </CardContent>
-                </Card>
-
+                <form action="https://formsubmit.co/100745e7aa9062fbef2d970a495761b0" method="POST">
+                    <input type="text" name="_honey" style={{display:"none"}}></input>
+                    {/* <input type="hidden" name="_captcha" value="false"></input> */}
+                    <Typography> Interested in sponsoring us?</Typography>
+                        <Card style={{backgroundColor: "#223f4f",maxWidth:450}}>
+                            <CardContent>
+                                <Grid container spacing={1}>
+                                    <Grid xs={12} sm={6} item>
+                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"} , InputLabelProps:{color:"white"} }} label="First Name" name="name" placeholder="Enter first name" variant="filled" fullWidth required/>
+                                    </Grid>
+                                    <Grid xs={12} sm={6} item>
+                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"} }} label="Last Name" placeholder="Enter Last name" name="Last Name" variant="filled" color="primary" fullWidth required />
+                                    </Grid>
+                                    <Grid xs={12}item>
+                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"}  }} type="email" label="Email" name="email" placeholder="Enter Email" variant="filled" fullWidth required />
+                                    </Grid>
+                                    <Grid xs={12}item>
+                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"}  }} type="number" label="Phone Number" name="Phone" placeholder="Enter Phone NUmber" variant="filled" fullWidth required />
+                                    </Grid>
+                                    <Grid xs={12}item>
+                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"}  }} label="Message" name="Message" multiline
+                                            inputProps={{ style: { color: "white" } }} placeholder="Enter Message" variant="filled" fullWidth />
+                                    </Grid>
+                                    <Grid xs={12}item>
+                                        <Button type="submit" variant="contained" color="primary" fullWidth> Send us an email</Button>
+                                    </Grid>
+                                </Grid>
+                            </CardContent>
+                        </Card>
+                </form>
             </div>
         </div>
     );

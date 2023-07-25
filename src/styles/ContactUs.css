@@ -7,29 +7,31 @@
     text-align: center;
 }
 
-.phone {
-    position: relative;
-    align-items: center;
-    height: 5vw;
-    width: 5vw;
-    left: 10vw;
-}
 .person {
     position: relative;
     align-items: center;
     height: 5vw;
     width: 5vw;
-    right: 0vw;
-    
+    margin-left:2vw;
 }
 .message {
     position: relative;
     align-items: center;
     height: 5vw;
     width: 5vw;
-    right: 10vw;
+    margin-right: 2vw;
 }
 .container-all-contact{
     display: flex;
     align-items: center;
+}
+.container-header-logos{
+    align-items: center;
+}
+.text-nuansa-page-email {
+    font-family: futura;
+    width: 100%;
+    text-align: justify;
+    font-size: 1.5vmax;
+    align-self:center;
 }
