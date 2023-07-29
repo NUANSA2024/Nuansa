@@ -9,6 +9,7 @@ import CopyEmail from "../components/CopyEmail";
 
 function ContactUs() {
     return (
+        
         <div id="wrapper" className="container-all-contact">
             <div className="container-header-logos">
                 <h1 className="header-nuansa-contact"
@@ -41,13 +42,14 @@ function ContactUs() {
                                         <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"} , InputLabelProps:{color:"white"} }} label="First Name" name="name" placeholder="Enter first name" variant="filled" fullWidth required/>
                                     </Grid>
                                     <Grid xs={12} sm={6} item>
-                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"} }} label="Last Name" placeholder="Enter Last name" name="Last Name" variant="filled" color="primary" fullWidth required />
+                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"} }}  label="Last Name" placeholder="Enter Last name" name="Last Name" variant="filled" color="primary" fullWidth required />
                                     </Grid>
                                     <Grid xs={12}item>
                                         <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"}  }} type="email" label="Email" name="email" placeholder="Enter Email" variant="filled" fullWidth required />
                                     </Grid>
                                     <Grid xs={12}item>
-                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"}  }} type="number" label="Phone Number" name="Phone" placeholder="Enter Phone NUmber" variant="filled" fullWidth required />
+                                        <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"}  }} type="tel" inputProps={{ inputMode: 'numeric', pattern: '[0-9]*', title:"Numbers Only, Max Length 12 Characters", maxLength:"12" }}  label="Phone Number" name="Phone" placeholder="Enter Phone NUmber"  variant="filled" fullWidth required
+                                         />
                                     </Grid>
                                     <Grid xs={12}item>
                                         <TextField sx={{border: '2px solid white',bgcolor: "#223f4f", input:{color:"white"}  }} label="Message" name="Message" multiline
