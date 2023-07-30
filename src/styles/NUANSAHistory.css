@@ -20,3 +20,13 @@
     top: 10vw;
     left: 2vw;
 }
+.Carousel {
+    height: 80vh;
+    width: 50vw;
+    overflow: hidden;
+}
+.carousel-image {
+    max-width: 100%; /* Limit the width of the images to fit the carousel container */
+    max-height: 100%; /* Maintain the aspect ratio of the images */
+  }
+  
