@@ -14,6 +14,9 @@ import Combined from "./pages/Combined";
 function App() {
   return (
     <div className="App">
+      <head>
+        <title>NUANSA 2024</title>
+      </head>
       <BrowserRouter>
         <Routes>
           <Route index element={<Combined />} />
@@ -21,6 +24,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
+    
   );
 }
 
