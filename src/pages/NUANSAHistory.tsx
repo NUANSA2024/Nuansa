@@ -13,9 +13,9 @@ function NUANSAHistory() {
         <h2 className= "header-nuansa-history"
         >
           NUANSA History
-        </h2>`
+        </h2>
       </div>
-      <div className="Carousel">
+      <div className="container-carousel">
       <ImageCarousel />
       </div>
     </div>
