@@ -55,3 +55,13 @@
     width: 50vw;
     max-height: 100%;
 }
+
+@media (max-width: 700px) {
+    .container-all-contact {
+        flex-direction: column;
+    }
+
+    .container-header-logos {
+        margin: 50px
+    }
+}
