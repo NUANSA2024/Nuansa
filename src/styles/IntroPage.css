@@ -24,12 +24,6 @@
     z-index: 1;
 }
 
-@media (max-width: 1000px) {
-    .image-intro {
-        margin-right: -100px;
-    }
-}
-
 .image-intro {
     height: 130vh;
     width: auto;
