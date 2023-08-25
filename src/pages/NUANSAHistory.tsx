@@ -3,26 +3,23 @@ import "../index.css";
 import "../fonts.css";
 import "../styles/NUANSAHistory.css";
 import { Link } from "react-router-dom";
+import Carousel from 'react-material-ui-carousel';
+import { Paper, Button } from '@mui/material';
+import ImageCarousel from "../ImageCarousel/Carousel";
 function NUANSAHistory() {
   return (
     <div>
-      <h2 className= "header-nuansa-history"
-      >
-        NUANSA History
-      </h2>
-      <div style={{display: "flex"}}>
-      <Link to="/NUANSA2018" rel="noreferrer">
-        <img
-          className="grey-box1"
-            src="/Greybox.png"
-        ></img>
-      </Link>
-      <img
-          className="grey-box2"
-          src="/Greybox.png"
-      ></img>
+      <div>
+        <h2 className= "header-nuansa-history"
+        >
+          NUANSA History
+        </h2>
+      </div>
+      <div className="container-carousel">
+      <ImageCarousel />
       </div>
     </div>
+
   );
 }
 
