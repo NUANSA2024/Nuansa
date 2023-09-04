@@ -4,13 +4,28 @@
 }
 @font-face {
     font-family: "futura";
-    src: url("./fonts/Futura\ Book\ font.ttf") format("ttf");
+    src: url("https://db.onlinewebfonts.com/t/02a0efa4275f78836dfc89db9e21feea.eot");
+    src: url("https://db.onlinewebfonts.com/t/02a0efa4275f78836dfc89db9e21feea.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/02a0efa4275f78836dfc89db9e21feea.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/02a0efa4275f78836dfc89db9e21feea.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/02a0efa4275f78836dfc89db9e21feea.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/02a0efa4275f78836dfc89db9e21feea.svg#Futura-Book")format("svg");
 }
 @font-face {
     font-family: "brixton";
-    src: url("./fonts/BrixtonSansRg.otf") format("otf");
+    src: url("https://db.onlinewebfonts.com/t/7e7150fe14df8f313997d9e8fb9e6d67.eot");
+    src: url("https://db.onlinewebfonts.com/t/7e7150fe14df8f313997d9e8fb9e6d67.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7e7150fe14df8f313997d9e8fb9e6d67.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7e7150fe14df8f313997d9e8fb9e6d67.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7e7150fe14df8f313997d9e8fb9e6d67.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7e7150fe14df8f313997d9e8fb9e6d67.svg#BrixtonHndSans-Regular")format("svg");
 }
 @font-face {
     font-family: "brilliant";
-    src: url("./fonts/Brilliant.ttf") format("ttf");
+    src: url("https://db.onlinewebfonts.com/t/ac3d9275004b28c5f906017ec7d97f7f.eot");
+    src: url("https://db.onlinewebfonts.com/t/ac3d9275004b28c5f906017ec7d97f7f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ac3d9275004b28c5f906017ec7d97f7f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ac3d9275004b28c5f906017ec7d97f7f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/ac3d9275004b28c5f906017ec7d97f7f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ac3d9275004b28c5f906017ec7d97f7f.svg#Brilliant Signature")format("svg");
 }

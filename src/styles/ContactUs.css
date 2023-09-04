@@ -5,31 +5,47 @@
     z-index: 1;
     position: relative;
     text-align: center;
-    top: 15vw;
 }
 
-.phone {
+.image-facebook {
     position: relative;
-    top: 15vw;
-    align-items: center;
     height: 5vw;
     width: 5vw;
-    left: 10vw;
 }
-.person {
+.image-instagram {
     position: relative;
-    top: 15vw;
-    align-items: center;
     height: 5vw;
     width: 5vw;
-    right: 0vw;
-    
 }
-.message {
-    position: relative;
-    top: 15vw;
+.container-all-contact{
+    display: flex;
     align-items: center;
-    height: 5vw;
-    width: 5vw;
-    right: 10vw;
+}
+.container-header-logos{
+    align-items: center;
+    width: 40vw;
+}
+.text-nuansa-page-email {
+    font-family: futura;
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vmax;
+    align-self:center;
+}
+
+.container-images {
+    margin-top: 3vh;
+    display: flex;
+    text-align: center
+}
+
+.header-form {
+    font-size: 10000px;
+}
+
+.container-alert {
+    text-align: center;
+    max-width: 100%;
 }
