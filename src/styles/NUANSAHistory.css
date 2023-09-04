@@ -40,13 +40,13 @@
 
 .img__description {
     position: relative;
-    bottom: 129px;
+    bottom: 102px;
     /* vertical-align: top; */
     background: rgba(59, 59, 59, 0.72);
     color: #fff;
     visibility: hidden;
     opacity: 0;
-    font-size: 100%;
+    font-size: 70%;
   
     /* transition effect. not necessary */
     transition: opacity .2s, visibility .2s;
