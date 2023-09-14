@@ -4,6 +4,8 @@ import "../fonts.css";
 import Button from '@mui/material/Button';
 import axios from 'axios';
 
+const backendUrl = 'http://localhost:3001';
+
 function IntroPage() {
     return (
         <div id="wrapper" style={{ display: "flex" }}>
@@ -21,9 +23,9 @@ function IntroPage() {
                 <Button variant="contained" onClick={
                     async () => {
                         try {
-                            console.log("hello")
-                            const response = await axios.post('/read-emails');
+                            const response = await axios.get(`${backendUrl}/read-emails`);
                             console.log(response.data);
+                            return response.data;
                         } catch (error) {
                             console.error(error);
                         }
