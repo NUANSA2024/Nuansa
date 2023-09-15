@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 5rem);
+  }
+  
 .App {
     text-align: center;
     background-color: #2088c0;
@@ -70,10 +75,10 @@
 }
 .App-header6 {
     background-color: #223f4f;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
     font-size: calc(50px + 2vmin);
     color: rgb(255, 255, 255);
-    margin: 0;
+    margin: 0 auto;
+    height: 250vh;
+    width: auto;
+    position: relative;
 }

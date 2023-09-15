@@ -5,10 +5,12 @@ import "../styles/NUANSAHistory.css";
 import { Link } from "react-router-dom";
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Button } from '@mui/material';
-import ImageCarousel from "../ImageCarousel/Carousel";
+import ImageCarousel from "../components/Carousel";
 function NUANSAHistory() {
   return (
     <div>
+      <div>
+    </div>
       <div>
         <h2 className= "header-nuansa-history"
         >
@@ -19,7 +21,6 @@ function NUANSAHistory() {
       <ImageCarousel />
       </div>
     </div>
-
   );
 }
 

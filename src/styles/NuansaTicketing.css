@@ -1,0 +1,38 @@
+.image-logo-container {
+    width: auto; /* Ensures the container does not exceed its parent's width */
+    height: auto; /* Sets the maximum height of the container to the viewport height */
+    position: relative;
+    justify-content: center;
+    align-items: top;
+  }
+  
+  .image-logo {
+    height: 20vh;
+    width: auto;
+    position: relative;
+    top:5vh;
+    /* z-index: -1; */
+  }
+  .image-seating-container {
+    height: auto;
+    width: auto;
+    position: relative;
+    top:10vh;
+    /* z-index: -1; */
+    justify-content: center;
+  }
+  .image-seating {
+    height: 60vh;
+    width: auto;
+    position: relative;
+    top:10vh;
+    /* z-index: -1; */
+  }
+
+  .form-container {
+    width: auto;
+    height: auto;
+    position:relative;
+    justify-content: center;
+    top: 30vh;
+  }

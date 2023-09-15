@@ -19,7 +19,8 @@
 }
 
 .image-intro {
-  height: 130vh;
+  margin-top: 8vh;
+  height: 122vh;
   width: auto;
   position: relative;
   /* z-index: -1; */

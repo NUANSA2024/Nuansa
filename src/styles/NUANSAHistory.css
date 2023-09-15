@@ -6,19 +6,6 @@
     position: relative;
     text-align: center;
 }
-.grey-box1 {
-    height: 30vw;
-    width: 40vw;
-    position: relative;
-    top: 10vw;
-}
-.grey-box2 {
-    height: 30vw;
-    width: 40vw;
-    position: relative;
-    top: 10vw;
-    left: 2vw;
-}
 
 .container-carousel {
     position: relative;
@@ -40,13 +27,13 @@
 
 .img__description {
     position: relative;
-    bottom: 102px;
+    bottom: 22%;
     /* vertical-align: top; */
     background: rgba(59, 59, 59, 0.72);
     color: #fff;
     visibility: hidden;
     opacity: 0;
-    font-size: 70%;
+    font-size: 60%;
   
     /* transition effect. not necessary */
     transition: opacity .2s, visibility .2s;
@@ -55,4 +42,7 @@
   .container-carousel-image:hover .img__description {
     visibility: visible;
     opacity: 1;
+  }
+  .height-spacer{
+
   }
