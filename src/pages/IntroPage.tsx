@@ -23,9 +23,13 @@ function IntroPage() {
                 <Button variant="contained" onClick={
                     async () => {
                         try {
-                            const response = await axios.get(`${backendUrl}/read-emails`);
-                            console.log(response.data);
-                            return response.data;
+                            const response = await axios.get(`${backendUrl}/read-emails`, {
+                                params: {
+                                    email: 'hieronimusbrandon@gmail.com'
+                                }
+                            });
+                            console.log('frontend response');
+                            console.log(response);
                         } catch (error) {
                             console.error(error);
                         }

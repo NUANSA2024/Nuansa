@@ -6,13 +6,15 @@ const emailService = require('./emailService');
 const corsOptions = {
     origin: 'http://localhost:3000',
 };
+
 app.use(cors(corsOptions));
 
 app.get('/read-emails', async (req, res) => {
     try {
-        const data = req.body;
-        const result = await emailService.readEmails(data);
-        res.json(result);
+        let {email} = req.query;
+        const result = await emailService.readEmails(email)
+        console.log("res", result)
+        await res.send(result)
     } catch (err) {
         console.error('Error fetching emails', err);
         res.status(500).json({ error: err.message });

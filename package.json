@@ -16,8 +16,10 @@
     "axios": "^1.5.0",
     "concurrently": "^8.2.1",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "imap": "^0.8.19",
+    "mailparser": "^3.6.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-horizontal-slider": "^1.1.1",
@@ -31,7 +33,7 @@
   },
   "scripts": {
     "start": "concurrently \"react-scripts start --port 3000\" \"npm run server\"",
-    "server": "node ./backend/router.js",
+    "server": "node -r dotenv/config ./backend/router.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
