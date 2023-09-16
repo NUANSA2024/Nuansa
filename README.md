@@ -18,6 +18,7 @@ You will also see any lint errors in the console.
 ### `npm run server`
 
 Launches only the backend server.
+You will need to add an .env folder to backend to be able to run email functions.
 Use postman to send requests to this server to test backend.
 
 ### `npm test`

@@ -1,7 +1,9 @@
 var Imap = require("imap");
 var simpleParser = require("mailparser").simpleParser;
+const nodemailer = require("nodemailer");
 
-require('dotenv').config({path: __dirname + '/env/imap.env'});
+require('dotenv').config({ path: __dirname + '/env/imap.env' });
+require('dotenv').config({ path: __dirname + '/env/smtp.env' });
 
 
 const imapConfig = {
@@ -13,13 +15,22 @@ const imapConfig = {
     tlsOptions: { rejectUnauthorized: process.env.IMAP_TLS_OPTIONS_REJECT_UNAUTHORIZED === 'true' },
 };
 
+const smtpConfig = {
+    service: process.env.SMTP_SERVICE,
+    port: parseInt(process.env.SMTP_PORT),
+    secure: process.env.SMTP_SECURE === 'true',
+    auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD,
+    }
+};
 
+const mailTransporter = nodemailer.createTransport(smtpConfig);
 const imap = new Imap(imapConfig);
 
 // function that returns an array of messages from an email address
 // TODO: change function to be able to filter by user's name
-async function readEmails(email) {
-    console.log(imapConfig)
+async function readEmail(email) {
     return new Promise((resolve, reject) => {
         let messages = [];
         let messagePromises = [];
@@ -66,4 +77,25 @@ async function readEmails(email) {
     });
 };
 
-module.exports = { readEmails };
+
+// function that sends a confirmation email to a given email address
+// attach an e ticket (?)
+async function sendEmail(email) {
+    let mailSettings = {
+        from: process.env.SMTP_USER,
+        to: email,
+        subject: "Test email",
+        text: "This is a test email",
+    }
+
+    mailTransporter.sendMail(mailSettings, (err) => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("Email sent successfully");
+        }
+    }
+    );
+}
+
+module.exports = { readEmail, sendEmail };
