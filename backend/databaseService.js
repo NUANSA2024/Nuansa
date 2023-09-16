@@ -11,7 +11,8 @@ const db = getFirestore();
 
 const storeSale = async (name, email, phone, category, quantity) => {
     try {
-        const docRef = await db.collection('customers').doc(name).set({
+        console.log(name, email, phone, category, quantity)
+        const docRef = await db.collection('customers').doc(name + ' - ' + email).set({
             name,
             email,
             phone,
@@ -19,8 +20,8 @@ const storeSale = async (name, email, phone, category, quantity) => {
             quantity,
             timestamp: Timestamp.now(),
         });
-        console.log('Document written with ID: ', docRef.id);
-        return docRef.id;
+        console.log('Document written for: ', name);
+        return 'success';
     } catch (err) {
         console.error('Error adding document: ', err);
     }
