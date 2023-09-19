@@ -1,82 +1,64 @@
-const { map } = require("bluebird");
+var Imap = require("imap");
+var simpleParser = require("mailparser").simpleParser;
+const nodemailer = require("nodemailer");
 
-var Imap = require("imap"),
-    inspect = require("util").inspect;
+require('dotenv').config({ path: __dirname + '/env/imap.env' });
+require('dotenv').config({ path: __dirname + '/env/smtp.env' });
+
 
 const imapConfig = {
-    user: "b.sjarifjp@gmail.com",
-    password: "yjivxxptmmdbngfd",
-    host: "imap.gmail.com",
-    port: 993,
-    tls: true,
-    tlsOptions: { rejectUnauthorized: false }, //prevent self signed certificate error
+    user: process.env.IMAP_USER,
+    password: process.env.IMAP_PASSWORD,
+    host: process.env.IMAP_HOST,
+    port: parseInt(process.env.IMAP_PORT),
+    tls: process.env.IMAP_TLS === 'true',
+    tlsOptions: { rejectUnauthorized: process.env.IMAP_TLS_OPTIONS_REJECT_UNAUTHORIZED === 'true' },
 };
 
+const smtpConfig = {
+    service: process.env.SMTP_SERVICE,
+    port: parseInt(process.env.SMTP_PORT),
+    secure: process.env.SMTP_SECURE === 'true',
+    auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD,
+    }
+};
+
+const mailTransporter = nodemailer.createTransport(smtpConfig);
 const imap = new Imap(imapConfig);
 
-async function readEmails(email) {
-    // imap.once("error", function (err) {
-    //     console.log(err);
-    // });
+// function that returns an array of messages from an email address
+// TODO: change function to be able to filter by user's name
+async function readEmail(email) {
+    return new Promise((resolve, reject) => {
+        let messages = [];
+        let messagePromises = [];
+        imap.once("ready", async function () {
+            imap.openBox("INBOX", false, () => {
+                imap.search(['ALL', ['FROM', email]], async (err, results) => {
+                    if (err) reject(err);
+                    const fetch = await imap.fetch(results, { bodies: "" });
+                    fetch.on("message", async function (msg) {
+                        const messagePromise = new Promise((resolve, reject) => {
+                            try {
+                                msg.on("body", async (stream) => {
+                                    const parsed = await simpleParser(stream);
+                                    await messages.push(parsed.text);
+                                    resolve();
+                                });
+                            } catch (err) {
+                                reject();
+                            }
+                        });
+                        messagePromises.push(messagePromise);
+                    })
 
-    // imap.once("ready", function () {
-    //     imap.openBox("INBOX", false, () => {
-    //         imap.search(
-    //             ["FROM", "no-reply@accounts.google.com"],
-    //             function (err, results) {
-    //                 const mail = imap.fetch(results, { bodies: "" });
-    //                 mail.on("message", function (msg, seqno) {
-    //                     console.log("Message #%d", msg);
-    //                 });
-    //             }
-    //         );
-    //     });
-
-    //     if (imap.state != "authenticated") {
-    //         imap.connect();
-    //     }
-    // });
-
-    // imap.once("end", function () {
-    //     console.log("Connection ended");
-    // });
-
-    // imap.connect();
-
-    function openInbox(cb) {
-        imap.openBox("INBOX", true, cb);
-    }
-
-    imap.once("ready", function () {
-        openInbox(function (err, box) {
-            if (err) throw err;
-            var f = imap.seq.fetch(['FROM', 'Google <no-reply@accounts.google.com>'], {
-                bodies: "HEADER.FIELDS (FROM TO SUBJECT DATE)",
-                struct: true,
-            });
-            f.on("message", function (msg, seqno) {
-                console.log("Message #%d", seqno);
-                var prefix = "(#" + seqno + ") ";
-                msg.on("body", function (stream, info) {
-                    var buffer = "";
-                    stream.on("data", function (chunk) {
-                        buffer += chunk.toString("utf8");
+                    fetch.on("end", async () => {
+                        await Promise.all(messagePromises);
+                        await imap.end();
+                        resolve(messages);
                     });
-                    stream.once("end", function () {
-                        console.log(
-                            prefix + "Parsed header: %s",
-                            inspect(Imap.parseHeader(buffer))
-                        );
-                    });
-                });
-                msg.once("attributes", function (attrs) {
-                    console.log(
-                        prefix + "Attributes: %s",
-                        inspect(attrs, false, 8)
-                    );
-                });
-                msg.once("end", function () {
-                    console.log(prefix + "Finished");
                 });
             });
             f.once("error", function (err) {
@@ -87,17 +69,40 @@ async function readEmails(email) {
                 imap.end();
             });
         });
-    });
 
-    imap.once("error", function (err) {
-        console.log(err);
-    });
 
-    imap.once("end", function () {
-        console.log("Connection ended");
-    });
+        imap.once("error", function (err) {
+            console.log(err);
+            reject(err);
+        });
 
-    imap.connect();
+        imap.once("end", function () {
+            console.log("Connection ended");
+        });
+
+        imap.connect();
+    });
+};
+
+
+// function that sends a confirmation email to a given email address
+// attach an e ticket (?)
+async function sendEmail(email) {
+    let mailSettings = {
+        from: process.env.SMTP_USER,
+        to: email,
+        subject: "Test email",
+        text: "This is a test email",
+    }
+
+    mailTransporter.sendMail(mailSettings, (err) => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("Email sent successfully");
+        }
+    }
+    );
 }
 
-module.exports = { readEmails };
+module.exports = { readEmail, sendEmail };

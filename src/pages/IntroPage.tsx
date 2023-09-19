@@ -6,6 +6,14 @@ import axios from 'axios';
 
 const backendUrl = 'http://localhost:3001';
 
+const data = {
+    name: 'Brandon',
+    email: 'something@gmail.com',
+    phone: '23123123',
+    category: 2,
+    quantity: 3,
+}
+
 function IntroPage() {
     return (
         <div id="wrapper" style={{ display: "flex" }}>
@@ -23,9 +31,9 @@ function IntroPage() {
                 <Button variant="contained" onClick={
                     async () => {
                         try {
-                            const response = await axios.get(`${backendUrl}/read-emails`);
-                            console.log(response.data);
-                            return response.data;
+                            const response = await axios.post(`${backendUrl}/store-sale`, data);
+                            console.log('frontend response');
+                            console.log(response);
                         } catch (error) {
                             console.error(error);
                         }

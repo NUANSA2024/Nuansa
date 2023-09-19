@@ -21,4 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-./Vstock
+
+# local env files
+/backend/env
+
+/backend/serviceAccountKey.json
