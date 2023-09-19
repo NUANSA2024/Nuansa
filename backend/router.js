@@ -10,8 +10,9 @@ app.use(cors(corsOptions));
 
 app.get('/read-emails', async (req, res) => {
     try {
+        console.log("read-emails");
         const data = req.body;
-        const result = await emailService.readEmails(data);
+        const result = await emailService.readEmails('no-reply@accounts.google.com');
         res.json(result);
     } catch (err) {
         console.error('Error fetching emails', err);
