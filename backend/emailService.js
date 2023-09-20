@@ -1,6 +1,7 @@
 var Imap = require("imap");
 var simpleParser = require("mailparser").simpleParser;
 const nodemailer = require("nodemailer");
+const fs = require('fs');
 
 require('dotenv').config({ path: __dirname + '/env/imap.env' });
 require('dotenv').config({ path: __dirname + '/env/smtp.env' });
@@ -88,11 +89,13 @@ async function readEmail(email) {
 // function that sends a confirmation email to a given email address
 // attach an e ticket (?)
 async function sendEmail(email) {
+    const emailContent = fs.readFileSync(__dirname + '/emailContent.html', 'utf8');
+
     let mailSettings = {
         from: process.env.SMTP_USER,
         to: email,
         subject: "Test email",
-        text: "This is a test email",
+        html: emailContent,
     }
 
     mailTransporter.sendMail(mailSettings, (err) => {

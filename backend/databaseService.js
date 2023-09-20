@@ -27,4 +27,21 @@ const storeSale = async (name, email, phone, category, quantity) => {
     }
 }
 
-module.exports = { storeSale };
+const loadSale = async(name) => {
+    try {
+        const docRef = doc(db, 'customers', name);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+            console.log('Document data:', docSnap.data());
+        } else {
+            // code to handle docSnap.data() being undefined
+            console.log('No such document!');
+        }
+    } catch (error) {
+        console.log('Error getting document:', error);
+    }
+
+}
+
+module.exports = { storeSale, loadSale };
