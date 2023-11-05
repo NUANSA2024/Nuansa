@@ -1,0 +1,14 @@
+.image_logo_navbar_container {
+    width: 4vw; /* Ensures the container does not exceed its parent's width */
+    height: 4vw; /* Sets the maximum height of the container to the viewport height */
+    position: relative;
+    justify-content: left;
+    align-items: top;
+}
+.image_logo_navbar {
+  width: 4vw; /* Ensures the container does not exceed its parent's width */
+  height: 4vw; /* Sets the maximum height of the container to the viewport height */
+  position: relative;
+  justify-content: left;
+  align-items: top;
+}

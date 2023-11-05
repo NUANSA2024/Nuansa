@@ -9,15 +9,17 @@ import {
   useNavigate,
   Link,
 } from "react-router-dom";
-import NUANSA2018 from "./pages/PastNUANSA/NUANSA2018";
 import Combined from "./pages/Combined";
+import NuansaTicketing from "./pages/NuansaTicketing";
+import NuansaMerch from "./pages/NuansaMerch";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route index element={<Combined />} />
-          <Route path="/NUANSA2018" element={<NUANSA2018 />} />
+          <Route path="/NuansaTicketing" element={<NuansaTicketing />} />
+          <Route path="/NuansaMerch" element={<NuansaMerch />} />
         </Routes>
       </BrowserRouter>
     </div>

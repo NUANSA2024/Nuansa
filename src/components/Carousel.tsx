@@ -12,13 +12,13 @@ interface CarouselItem {
 
 const ImageCarousel: React.FC = () => {
   const items: CarouselItem[] = [
-    { id: 1, image: "/NuansaHistory_2019.jpg", alt: "NUANSA 2019: Lukisan Jati" },
+    { id: 1, image: "/NuansaHistory_2019.jpg", alt: "NUANSA 2019 - Lukisan Jati" },
     { id: 2, image: "/NuansaHistory_2018.jpg", alt: "NUANSA 2018 - Tasasek" },
     { id: 3, image: "/NuansaHistory_2017.jpg", alt: "NUANSA 2017 - Galigo" },
     { id: 4, image: "/NuansaHistory_2016.jpg", alt: "NUANSA 2016 - Rhapsody" },
     { id: 5, image: "/NuansaHistory_2015.jpg", alt: "NUANSA 2015 - Flowers of Asmat" },
     { id: 6, image: "/NuansaHistory_2014.jpg", alt: "NUANSA 2014 - The Priyayi" },
-    { id: 7, image: "/NuansaHistory_2013.jpg", alt: "NUANSA 2013 - Dance of The earth" },
+    { id: 7, image: "/NuansaHistory_2013.jpg", alt: "NUANSA 2013 - Dance of the Earth" },
     { id: 8, image: "/NuansaHistory_2012.jpg", alt: "NUANSA 2012 - Canting" },
     { id: 9, image: "/NuansaHistory_2011.jpg", alt: "NUANSA 2011 - CA BAU KAN" },
     { id: 10, image: "/NuansaHistory_2010.jpg", alt: "NUANSA 2010 - The Earth of Mankind" },
