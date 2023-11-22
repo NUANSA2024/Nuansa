@@ -16,7 +16,7 @@ const sponsors = {
     { id: 2, logo: 'LOGO_DCAM-removebg.png' },
     { id: 3, logo: 'BISA Logo.jpg'},
     { id: 4, logo: 'biru .png'},
-    { id: 5, logo: 'logo_CBS.png'}
+    { id: 5, logo: 'Logo_CBS.png'}
     // Add more silver sponsors heres
   ],
 };
