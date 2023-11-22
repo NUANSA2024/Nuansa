@@ -72,10 +72,7 @@ function NUANSAPage() {
                 </div>
             </div>
             <div className="container-subtext-nuansa">
-                <h2 className="subtext-nuansa">UCC Theatre - 2 March 2024*</h2>
-                <h3 className="subtext-nuansa">
-                    *Date and Time To Be Confirmed
-                </h3>
+                <h2 className="subtext-nuansa">UCC Theatre - 18 February 2024</h2>
             </div>
         </div>
     );
