@@ -53,7 +53,7 @@ const SponsorPage: React.FC = () => {
     paddingBottom: '10vh', // Adjust the space between tiers as needed
   };
   return (
-    <div>
+    <div id='wrapper'>
       {/* Platinum Sponsors */}
       <h1 className='header-sponsor'> Our Sponsors </h1>
       <Grid container spacing={3} justifyContent="center" style={tierSpacer}>
