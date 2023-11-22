@@ -35,7 +35,7 @@ function ContactUs() {
                     <input type="text" name="_honey" style={{display:"none"}}></input>
                     {/* <input type="hidden" name="_captcha" value="false"></input> */}
                     <Typography sx={{fontSize: "4vmax", fontFamily: "futura"}}> Interested in sponsoring us?</Typography>
-                        <Card style={{backgroundColor: "#223f4f",maxWidth:450}}>
+                        <Card style={{backgroundColor: "#223f4f",maxWidth:1000}}>
                             <CardContent>
                                 <Grid container spacing={1}>
                                     <Grid xs={12} sm={6} item>

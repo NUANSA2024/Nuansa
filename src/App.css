@@ -1,6 +1,6 @@
 .App {
     text-align: center;
-    background-color: #2088c0;
+    background-color: #ffffff;
 }
 
 .App-header {
@@ -28,7 +28,15 @@
     color: rgb(255, 255, 255);
     margin: 0;
 }
-
+.App-video {
+    background-color: #ed994f;
+    height: 110vh;
+    min-width: 100vw;
+    display: flex;
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
 .Gradient2 {
   margin: 0;  
   height: 100vh;
@@ -68,8 +76,8 @@
     font-family: "aloja";
     margin: 0;
 }
-.App-header6 {
-    background-color: #223f4f;
+.App-spnsor {
+    background-color: #ffff;
     height: 100vh;
     width: 100vw;
     display: flex;
