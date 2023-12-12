@@ -55,7 +55,7 @@ const SponsorPage: React.FC = () => {
   return (
     <div className='header-sponsor'>
       {/* Platinum Sponsors */}
-      <h1> Our Sponsors for the week </h1>
+      <h1> Our Sponsors </h1>
       <Grid container spacing={3} justifyContent="center" style={tierSpacer}>
         {sponsors.platinum.map((sponsor) => (
           <Grid item xs={6} sm={4} md={3} key={sponsor.id}>
