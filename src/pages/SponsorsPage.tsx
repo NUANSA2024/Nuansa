@@ -8,7 +8,8 @@ const sponsors = {
     // Add more platinum sponsors here
   ],
   gold: [
-    { id: 1, logo: 'logo mandiri.png' }
+    { id: 1, logo: 'logo mandiri.png' },
+    { id: 2, logo: 'Logo_dv.png'},
     // Add more gold sponsors here
   ],
   silver: [
@@ -16,7 +17,8 @@ const sponsors = {
     { id: 2, logo: 'LOGO_DCAM-removebg.png' },
     { id: 3, logo: 'BISA Logo.jpg'},
     { id: 4, logo: 'biru .png'},
-    { id: 5, logo: 'Logo_CBS.png'}
+    { id: 5, logo: 'Logo_CBS.png'},
+    { id: 6, logo: 'Logo_rayspeed.png'}
     // Add more silver sponsors heres
   ],
 };
@@ -32,21 +34,19 @@ const SponsorPage: React.FC = () => {
   };
 
   const imgStylegold = {
-    maxWidth: '125%', // Adjust the maximum width as needed
-    height: 'auto',
+    width: 'auto', // Adjust the maximum width as needed
+    height: '30vh',
     display: 'block',
     margin: 'auto', // Center the image within the Paper component
   };
   const imgStylesilver = {
-    maxWidth: '95%', // Adjust the maximum width as needed
-    height: 'auto',
-    display: 'block',
+    width: 'auto', // Adjust the maximum width as needed
+    height: '20vh',
     margin: 'auto', // Center the image within the Paper component
   };
   const imgStylebronze = {
-    maxWidth: '55%', // Adjust the maximum width as needed
-    height: 'auto',
-    display: 'block',
+    maxWidth: 'auto', // Adjust the maximum width as needed
+    height: '10vh',
     margin: 'auto', // Center the image within the Paper component
   };
   const tierSpacer = {
@@ -55,8 +55,11 @@ const SponsorPage: React.FC = () => {
   return (
     <div id='wrapper'>
       {/* Platinum Sponsors */}
-      <Typography> Our Sponsors </Typography>
+      <div className="header-sponsor">
+      <h2> Our Sponsors </h2>
+      </div>
       <Grid container spacing={3} justifyContent="center" style={tierSpacer}>
+      
         {sponsors.platinum.map((sponsor) => (
           <Grid item xs={6} sm={4} md={3} key={sponsor.id}>
             <Paper style={paperStyle}>
@@ -70,7 +73,8 @@ const SponsorPage: React.FC = () => {
       <Typography variant="h4" align="center" gutterBottom>
              
       </Typography>
-      <Grid container spacing={3} justifyContent="center" style={tierSpacer}>
+      <Grid container spacing={70} justifyContent="center" style={tierSpacer}>
+      
         {sponsors.gold.map((sponsor) => (
           <Grid item xs={6} sm={4} md={3} key={sponsor.id}>
             <Paper style={paperStyle}>
