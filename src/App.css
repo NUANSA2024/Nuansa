@@ -76,7 +76,7 @@
     font-family: "aloja";
     margin: 0;
 }
-.App-spnsor {
+.App-sponsor {
     background-color: #ffff;
     height: 100vh;
     width: 100vw;
@@ -84,4 +84,5 @@
     font-size: calc(50px + 2vmin);
     color: rgb(255, 255, 255);
     margin: 0;
+    font-family: 'aloja';
 }

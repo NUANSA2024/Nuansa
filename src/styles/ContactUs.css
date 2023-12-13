@@ -37,6 +37,7 @@
 
 .container-images {
     margin-top: 3vh;
+    max-width: 50vw;
     display: flex;
     text-align: center
 }
@@ -48,4 +49,19 @@
 .container-alert {
     text-align: center;
     max-width: 100%;
+}
+
+.container-form {
+    width: 50vw;
+    max-height: 100%;
+}
+
+@media (max-width: 700px) {
+    .container-all-contact {
+        flex-direction: column;
+    }
+
+    .container-header-logos {
+        margin: 50px
+    }
 }
