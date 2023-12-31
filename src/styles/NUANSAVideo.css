@@ -1,0 +1,11 @@
+.video_container{
+    background-color: #9a5434;
+}
+.header-video {
+    font-family: aloja;
+    text-align: center;
+    margin: 0em;
+    position: relative;
+    z-index: 1;
+    font-size: 13vh;
+}

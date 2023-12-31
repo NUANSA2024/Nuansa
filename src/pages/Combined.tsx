@@ -8,6 +8,8 @@ import IntroPage from "../pages/IntroPage";
 import AboutPage from "../pages/AboutPage";
 import NUANSAPage from "../pages/NUANSAPage";
 import Gradient1 from "./Gradient1";
+import SponsorPage from "./SponsorsPage";
+import NUANSAVideo from "./NUANSAVideo";
 import ScrollApp from "../components/scrollApp";
 import NuansaTicketing from "./NuansaTicketing";
 import NavigationBar from "../components/NavigationBar";
@@ -26,6 +28,9 @@ function Combined() {
       <h2 className="App-header2">
         <AboutPage />
       </h2>
+      <h2 className="App-video">
+        <NUANSAVideo />
+      </h2>
       <h2 className="Gradient2">
         <NUANSAPage />
       </h2>
@@ -34,6 +39,9 @@ function Combined() {
       </h2>
       <h2 className="App-header5">
         <ContactUs />
+      </h2>
+      <h2 className="App-sponsor">
+        <SponsorPage />
       </h2>
     </div></>
   );
