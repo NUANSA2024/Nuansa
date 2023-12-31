@@ -19,9 +19,11 @@ function NavigationBar() {
       <Container fixed sx={{ minWidth:"100vw" }}>
         <Toolbar disableGutters sx={{ color: 'black',display: "flex"}}>
         <div className="image_logo_navbar_container">
-          <Box >
+          <Box>
             <Tooltip title="NUANSA 2024">
+                <a href="/">
                   <img className="image_logo_navbar"src="/Logo_Nuansa.png" />
+                </a>
             </Tooltip>
           </Box>
           </div>
