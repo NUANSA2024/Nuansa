@@ -1,8 +1,5 @@
 import React from 'react';
 import "../styles/NuansaMerch.css";
-import Button from '@mui/material/Button';
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 interface MerchProps {
   data: {
@@ -12,14 +9,6 @@ interface MerchProps {
     merchImage: string;
   };
 }
-
-const theme = createTheme({
-    palette: {
-      primary: {
-        main: '#ED994F',
-      },
-    }
-  });
 
 const Merch: React.FC<MerchProps> = (props) => {
   const { id, merchName, price, merchImage } = props.data;
@@ -38,14 +27,6 @@ const Merch: React.FC<MerchProps> = (props) => {
                 fontSize: '22px',
                 lineHeight: '10px'
             }}>${price}</p>
-            <ThemeProvider theme={theme}>
-                {/* TODO: Add cart functionality */}
-                <Button variant="contained" startIcon={<AddShoppingCartIcon />} color="primary"
-                style={{
-                    borderRadius: '25px',
-                    margin: '10px'
-                }}>Add To Cart</Button>
-            </ThemeProvider>
         </div>
     </div>
   );
